@@ -29,3 +29,6 @@ for (let fruit of fruits)
 
 ///TBD :  For EACH
 
+fruits.forEach(function(fruit){
+    console.log(`Using foreach ${fruit}`);
+})
