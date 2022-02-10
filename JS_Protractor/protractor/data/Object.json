@@ -1,0 +1,16 @@
+{
+    "url" : "https://juliemr.github.io/protractor-demo/",
+
+    "locators" : {
+        "homepage" : {
+            "firstNum_model" : "first",
+            "secNum_model" : "second",
+            "goButton_id" : "gobutton"
+        }
+    },
+
+    "testdata" : {
+        "firstnum" : 22,
+        "secnum" : 44
+    }
+}

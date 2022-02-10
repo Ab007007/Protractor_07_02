@@ -20,11 +20,15 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['testcase1.js','SelectDemo.js'],
+  specs: ['testcase1.js'],
 
+  suites : {
+    smoke : ['./smoke/*.js'],
+    regression : ['./ActionsDemo.js','./ChainLocatorsDemo.js']
+  },
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 300000
   },
   // Setup the report before any tests start
   beforeLaunch: function() {
